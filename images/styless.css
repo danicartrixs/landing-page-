@@ -1,0 +1,199 @@
+/* Reset bàsic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estils generals */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== MENÚ DE NAVEGACIÓ ===== */
+
+.navbar {
+    background-color: #1f1f1f;
+    padding: 15px 40px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #00bcd4;
+}
+
+/* ===== CONTINGUT PRINCIPAL ===== */
+
+.landing-container {
+    min-height: 85vh;
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 50px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* ===== CAPÇALERA ===== */
+
+.header {
+    margin-bottom: 30px;
+}
+
+.product-title {
+    font-size: 3rem;
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.product-subtitle {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* ===== HERO SECTION ===== */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 15px;
+    display: block;
+}
+
+/* Text sobre la imatge */
+
+.hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+
+    padding: 12px 18px;
+    border-radius: 8px;
+
+    font-size: 1rem;
+}
+
+/* ===== DESCRIPCIÓ ===== */
+
+.description-section {
+    max-width: 750px;
+}
+
+.product-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+/* ===== BOTÓ CTA ===== */
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+
+    padding: 15px 35px;
+    border-radius: 8px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* ===== FOOTER PRINCIPAL ===== */
+
+.main-footer {
+    background-color: #1f1f1f;
+    color: white;
+
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.footer-text {
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #00bcd4;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    .product-title {
+        font-size: 2.2rem;
+    }
+
+    .product-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-text {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
